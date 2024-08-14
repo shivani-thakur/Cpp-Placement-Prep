@@ -1,5 +1,7 @@
 // Following is the solution for: https://leetcode.com/problems/two-sum/
 
+#include <bits/stdc++.h>
+
 // Brute force
 class Solution {
 public:
