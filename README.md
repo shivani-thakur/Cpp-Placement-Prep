@@ -13,7 +13,7 @@ Welcome to the **Cpp-Placement-Prep** repository! This collection is dedicated t
 
 1. **Clone the Repository**:
     ```bash
-    git clone [https://github.com/your-username/Cpp-Placement-Prep.git](https://github.com/shivani-thakur/Cpp-Placement-Prep.git)
+    git clone https://github.com/your-username/Cpp-Placement-Prep.git
     ```
 2. **Navigate through the folders** to find different categories of problems.
 3. **Run the codes** in your local C++ environment or use an online compiler to test them out.
