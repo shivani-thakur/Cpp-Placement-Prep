@@ -1,5 +1,6 @@
 // Following is the solution for: https://www.geeksforgeeks.org/problems/insertion-sort/0
 
+// Pick an element and place it at its correct position, 2 parts of array - sorted and unsorted
 class Solution
 {
     public:

@@ -1,4 +1,7 @@
 // Following is the solution for: https://www.geeksforgeeks.org/problems/bubble-sort/1
+
+// pushes the maximum to the last
+
 #include <iostream>
 #include <type_traits>
 #include <utility>
