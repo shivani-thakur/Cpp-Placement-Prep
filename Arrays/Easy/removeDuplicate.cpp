@@ -1,5 +1,22 @@
 // Following is the solution for: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
+// Brute force: Use a set
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        set<int> s;
+        for(auto it: nums) {
+            s.insert(it);
+        }
+        int i = 0;
+        for(auto it: s) {
+            nums[i] = it;
+            i++;
+        }
+        return i;
+    }
+};
+
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -31,5 +48,25 @@ public:
         
         // Return the number of unique elements, which is 'i + 1'
         return i + 1; 
+    }
+};
+
+
+// Other solution
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int tot = 0;
+        for (int i = 1; i < nums.size(); i++) {
+            while (i < nums.size() && nums[tot] == nums[i]) {
+                i++;
+            }
+            if (i < nums.size() && nums[tot] != nums[i]) {
+                tot++;
+                nums[tot] = nums[i];
+            }
+        }
+        cout << tot;
+        return tot+1;
     }
 };

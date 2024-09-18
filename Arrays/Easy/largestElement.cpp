@@ -1,5 +1,7 @@
 // Following is the solution for: https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0
 
+// Brute force: sorting the array
+
 class Solution
 {
 public:
