@@ -1,5 +1,9 @@
 // Following is the solution for: https://leetcode.com/problems/missing-number
 
+/* Brute force:
+Loop i 0 to 1 and check if i is present in array or not.
+*/
+
 // O(n) using extra space
 class Solution {
 public:
@@ -41,4 +45,16 @@ public:
     }
 };
 
-// XOR approach can also be used
+// XOR approach can also be used. If 'N' is very large, then N*(N+1) will not fit in int. Hence XOR
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int xor1 = 0, xor2 = 0;
+        for (int i = 0; i < nums.size();i++) {
+            xor1 = xor1 ^ (i+1);
+            xor2 = xor2 ^ nums[i];
+        }
+        //xor1 = xor1 ^ (nums.size());
+        return xor1 ^ xor2;
+    }
+};
